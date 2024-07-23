@@ -1,0 +1,3 @@
+https://www.kaggle.com/code/ishan8055/cataract-prediction-using-vgg19-3a7f2d/edit
+
+https://www.kaggle.com/datasets/andrewmvd/ocular-disease-recognition-odir5k

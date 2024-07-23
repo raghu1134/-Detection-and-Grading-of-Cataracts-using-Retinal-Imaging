@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/homebg2.jpg') no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: #ccc;
+    height: 100vh;
+  }
+  
+  header {
+    
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+  }
+  
+  main {
+    justify-content: left;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* ... (other styles) ... */
+
+.upload-section {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    /* Remove border: */
+    border: none; 
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    
+  }
+  
+  
+  
+  
+  .upload-section h2 {
+    margin-bottom: 10px;
+    padding: 30px;
+  }
+  
+  .upload-section input[type="file"] {
+    display: none;
+  }
+  
+  .upload-section label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .upload-section label:hover {
+    background-color: #ccc;
+  }
+  
+  .upload-section button {
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: #2489f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .upload-section button:hover {
+    background-color: #0067cc;
+  }
+  #contact {
+    margin-top: 50px; /* Optional spacing above contact section */
+  }

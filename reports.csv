@@ -1,0 +1,3 @@
+username,uploaded_file,result,affected,severity,status,time_stamp
+test,uploads\1.jpg,Prediction For Cataract: CATARACT : POSITIVE Critical(99.35%),Prediction For Cataract: CATARACT : POSITIVE Critical(99.35%),CATARACT : POSITIVE Critical(99.35%),Critical,16-02-2024 02:46
+test,uploads\2.jpg,Prediction For Cataract: CATARACT : POSITIVE Critical(99.7%),Prediction For Cataract: CATARACT : POSITIVE Critical(99.7%),CATARACT : POSITIVE Critical(99.7%),Critical,16-02-2024 09:25

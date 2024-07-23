@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url('eyeimage.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #ccc;
+}
+
+.login-box {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.login-box.register {
+    width: 450px;
+    
+}
+
+h2 {
+    font-size: 2em;
+    color: #101010;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+    border-bottom: 2px solid #0a0a0a;
+    height: 50px;
+}
+
+.input-box label {
+    position: absolute;
+    margin-bottom: 6px;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #101010;
+    pointer-events: none;
+    transition: .5s;
+    height: 40px;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -0px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #101010;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: #1a1919;
+    font-size: 1.2em;
+    line-height: 40px;
+}
+
+.remember-forgot {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #101010;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.remember-forgot label input {
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #101010;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: #66e6f5;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #101010;
+    font-weight: 500;
+}
+
+.login-link {
+    font-size: .9em;
+    color: #101010;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-link p a {
+    color: #1069ef;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link p a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+    display: block;
+}
+

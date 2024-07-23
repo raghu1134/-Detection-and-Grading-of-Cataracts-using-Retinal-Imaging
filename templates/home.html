@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilud Homepage</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/chtgptstyle1.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="dashboard">Home</a>
+      <a href="check_cataract">Cataract Web</a>
+	  <a href="my_profile">My profile</a>
+	  <a href="login">Logout</a>
+     
+    </nav>
+  </header>
+  <main>
+    <center>
+    <h1>Welcome to visioners</h1>
+    <p>Detection and Grading of Cataract Using Retinal Image</p>
+    <div class="upload-section">
+        <h2>Upload Image</h2>
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+          <input type="file" name="file" id="file" accept=".jpg, .jpeg, .png" required>
+          <label for="file">Choose File</label>
+          <br>
+          <button type="submit">Upload and predict</button>
+        </form>
+		{% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    {% if result %}
+        <h2>Prediction Result:</h2>
+        <p>{{ result }}</p>
+    {% endif %}
+    </div>
+</center>
+<h2 >Steps To Upload Images</h2>  
+    
+    <p><span >•	Take scanned retinal image and</span>
+	<br>
+    <br>
+	<br> •	Capture the image with camera</p></span>
+    
+    <p>  • Upload the captured image in upload image option.</span>
+	<br>
+	<br>
+	<p><span> •	No blur images are process.</span></p>
+  
+    
+  </main>
+</body>
+</html>

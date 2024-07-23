@@ -1,0 +1,159 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history of uploads</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>history of uploads</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Uploaded File</th>
+                <th>Result 1</th>
+                <th>Result 2</th>
+                <th>Percent</th>
+                <th>Status</th>
+                <th>Date & Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row.username }}</td>
+                <td>{{ row.uploaded_file }}</td>
+                <td>{{ row.result }}</td>
+                <td>{{ row.affected }}</td>
+                <td>{{ row.severity }}</td>
+                <td>{{ row.status }}</td>
+                <td>{{ row.time_stamp }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cataract Detection Project</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            
+            background: url('static/images/homebg1.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: #ccc;
+        }
+
+        /* Main Navigation Bar */
+        .main-nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .main-nav h1 {
+            margin: 0;
+        }
+
+        /* Login and Signup Navigation Bars */
+        .sub-nav {
+            background-color: #eee;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .sub-nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Project Information Section */
+        .project-info {
+            text-align: left;
+            padding: 120px;
+        }
+
+        .project-info h2 {
+            color: #333;
+        }
+
+        .project-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #454032;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation Bar -->
+    <div class="main-nav">
+        <h1>Welcome to Our Cataract Detection And Grading Project</h1>
+    </div>
+
+    <!-- Sub Navigation Bars for Login and Signup -->
+    <div class="sub-nav">
+        <!-- Login Navigation Bar -->
+        <div>
+            <a href="/login">Login</a>
+        </div>
+
+        <!-- Signup Navigation Bar -->
+        <div>
+            <a href="/register">Sign Up</a>
+        </div>
+		<div>
+            <a href="/login">Logout</a>
+        </div>
+    </div>
+    <body>
+        <h1>history of uploads</h1>
+        <table border="1" style="margin: 0 auto;">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Uploaded File</th>
+                    <th>Result 1</th>
+                    <th>Result 2</th>
+                    <th>Percent</th>
+                    <th>Status</th>
+                    <th>Date & Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %}
+                <tr>
+                    <td>{{ row.username }}</td>
+                    <td>{{ row.uploaded_file }}</td>
+                    <td>{{ row.result }}</td>
+                    <td>{{ row.affected }}</td>
+                    <td>{{ row.severity }}</td>
+                    <td>{{ row.status }}</td>
+                    <td>{{ row.time_stamp }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+
+</body>
+</html>
+
+
